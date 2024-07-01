@@ -1,31 +1,38 @@
-<<<<<<< HEAD
-# portfolio
-=======
-# Portfolio
+# DevOps Full Stack Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
+## Descrição
 
-## Development server
+Este é o meu projeto de portfólio como desenvolvedor Full Stack com especialização em DevOps. O projeto é construído usando Angular para o front-end e demonstra minhas habilidades em desenvolvimento web, automação, integração contínua, entrega contínua e gerenciamento de infraestrutura.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Funcionalidades
 
-## Code scaffolding
+- **Página Inicial**: Uma visão geral das minhas habilidades e experiências.
+- **Projetos**: Uma seção dedicada aos meus projetos anteriores com detalhes e links.
+- **Habilidades**: Listagem de minhas habilidades técnicas e ferramentas que utilizo.
+- **Certificações**: Lista de certificações que possuo.
+- **Contato**: Formulário de contato para que potenciais empregadores ou colaboradores possam entrar em contato comigo.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Tecnologias Utilizadas
 
-## Build
+- **Front-end**: Angular, HTML, CSS, TypeScript
+- **CI/CD**: azure Pipelines
+- **Infraestrutura**: Docker, Kubernetes
+- **Versionamento de Código**: Git
+- **Cloud**: Azure
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Estrutura do Projeto
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
->>>>>>> master
+```bash
+portfolio/
+├── src/
+│   ├── app/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   └── ...
+│   ├── assets/
+│   └── ...
+├── .gitignore
+├── angular.json
+├── README.md
+└── package.json
