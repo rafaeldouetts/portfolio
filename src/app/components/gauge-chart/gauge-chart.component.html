@@ -1,0 +1,14 @@
+<div class="gauge-chart">
+    <svg viewBox="0 0 100 50" class="gauge">
+      <path class="gauge-bg" d="M10,50 A40,40 0 0,1 90,50" />
+      <path class="gauge-value" d="M10,50 A40,40 0 0,1 90,50" [attr.stroke-dasharray]="gaugeValue + ', 100'" />
+    </svg>
+    <div class="gauge-text">
+      {{ gaugeValue }}%
+    </div>
+
+    <div class="title">
+        <span >{{ title }}</span>
+    </div>
+  </div>
+  

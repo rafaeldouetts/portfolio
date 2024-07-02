@@ -1,0 +1,53 @@
+:host {
+    display: block;
+    width: 100%;
+  }
+  
+  .gauge-chart {
+    position: relative; /* Garante que o conteúdo interno respeite o tamanho do pai */
+    width: 100%; /* Ajusta-se ao tamanho do pai */
+    height: 0; /* Altura inicial zero para manter proporção */
+    padding-bottom: 50%; /* Proporção altura/largura desejada (ajuste conforme necessário) */
+  }
+  
+  .gauge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .gauge-bg {
+    fill: none;
+    stroke: #e6e6e6;
+    stroke-width: 10;
+  }
+  
+  .gauge-value {
+    fill: none;
+    stroke: #007bff;
+    stroke-width: 10;
+    stroke-dasharray: 0, 100;
+    transition: stroke-dasharray 0.5s ease;
+  }
+  
+  .gauge-text {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    color: #333;
+  }
+
+  .title {
+    font-size: 1.2em;
+    position: absolute;
+    color: #333;
+    left: 37%;
+    bottom: 0px;
+    // margin-top: 10px; /* Espaçamento superior */
+  }
+  
+  

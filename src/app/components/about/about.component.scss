@@ -1,0 +1,8 @@
+.content {
+    margin-top: 100px; /* Ajuste conforme necessário para evitar sobreposição com o menu */
+    padding: 20px;
+    background: #f5f5f5;
+    z-index: 1; /* Abaixo do menu de hambúrguer */
+    position: relative; /* Para garantir que o z-index seja aplicado */
+  }
+  
