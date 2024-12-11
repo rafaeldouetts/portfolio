@@ -1,11 +1,10 @@
-
 * {
 
-    margin: 0;
+  margin: 0;
 
-    padding: 0;
+  padding: 0;
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 
 }
 
@@ -15,56 +14,67 @@
 
 body {
 
-    font-family: 'Arial', sans-serif;
+  font-family: 'Arial', sans-serif;
 
-    line-height: 1.6;
+  line-height: 1.6;
 
-    background: #111111;
+  background: #111111;
 
-    color: #fff;
+  color: #fff;
 
 }
 
 /* Container principal */
 
 .container {
-    width: 90%;
-    margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
-
+.onda {
+  width: 100%;
+  height: 150px;
+  /* Aumenta a altura da onda */
+  background: linear-gradient(to bottom, #6a1b9a, #9c27b0);
+  /* Gradiente roxo */
+  position: absolute;
+  bottom: -50px;
+  /* Faz a onda aparecer um pouco fora da div */
+  clip-path: ellipse(80% 60% at 50% 100%);
+  /* Aumenta a amplitude da onda */
+}
 
 /* Cabeçalho */
 
 header {
-    text-align: center;
-    background: rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-    position: fixed;
-    width: 86%;
-    margin-left: 7%;
-    border: solid;
-    border-bottom-color: #7B35C5;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  position: fixed;
+  width: 86%;
+  margin-left: 7%;
+  border: solid;
+  border-bottom-color: #7B35C5;
 }
 
 
 
 header .profile img {
 
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1rem;
-    border: 4px solid #fff;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 4px solid #fff;
 }
 
 
 
 header h1 {
 
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 
 }
 
@@ -72,9 +82,9 @@ header h1 {
 
 header p {
 
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 
-    font-weight: 300;
+  font-weight: 300;
 
 }
 
@@ -84,9 +94,9 @@ header p {
 
 .about {
 
-    padding: 3rem 0;
+  padding: 3rem 0;
 
-    text-align: center;
+  text-align: center;
 
 }
 
@@ -94,9 +104,9 @@ header p {
 
 .about h2 {
 
-    font-size: 2rem;
+  font-size: 2rem;
 
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 
 }
 
@@ -106,15 +116,15 @@ header p {
 
 .skills {
 
-    padding: 3rem 0;
+  padding: 3rem 0;
 
-    background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.1);
 
-    border-radius: 8px;
+  border-radius: 8px;
 
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 
-    text-align: center;
+  text-align: center;
 
 }
 
@@ -122,9 +132,9 @@ header p {
 
 .skills h2 {
 
-    font-size: 2rem;
+  font-size: 2rem;
 
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 
 }
 
@@ -132,7 +142,7 @@ header p {
 
 .skills ul {
 
-    list-style-type: none;
+  list-style-type: none;
 
 }
 
@@ -140,13 +150,13 @@ header p {
 
 .skills li {
 
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 
-    margin: 0.5rem 0;
+  margin: 0.5rem 0;
 
-    padding: 0.3rem;
+  padding: 0.3rem;
 
-    border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 
 }
 
@@ -156,11 +166,11 @@ header p {
 
 .projects {
 
-    padding: 3rem 0;
+  padding: 3rem 0;
 
-    background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.1);
 
-    border-radius: 8px;
+  border-radius: 8px;
 
 }
 
@@ -168,11 +178,11 @@ header p {
 
 .projects h2 {
 
-    font-size: 2rem;
+  font-size: 2rem;
 
-    text-align: center;
+  text-align: center;
 
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 
 }
 
@@ -180,7 +190,7 @@ header p {
 
 .project {
 
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 
 }
 
@@ -188,9 +198,9 @@ header p {
 
 .project h3 {
 
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 
 }
 
@@ -198,7 +208,7 @@ header p {
 
 .project p {
 
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 
 }
 
@@ -208,17 +218,17 @@ header p {
 
 footer {
 
-    padding: 2rem 0;
+  padding: 2rem 0;
 
-    text-align: center;
+  text-align: center;
 
-    background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.4);
 
-    border-radius: 10px;
+  border-radius: 10px;
 
-    margin-top: 3rem;
+  margin-top: 3rem;
 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 
 }
 
@@ -226,9 +236,9 @@ footer {
 
 footer p {
 
-    font-size: 1rem;
+  font-size: 1rem;
 
-    font-weight: 300;
+  font-weight: 300;
 
 }
 
@@ -238,7 +248,7 @@ footer p {
 
 .project h3 {
 
-    transition: color 0.3s ease;
+  transition: color 0.3s ease;
 
 }
 
@@ -246,7 +256,7 @@ footer p {
 
 .project h3:hover {
 
-    color: #3498db;
+  color: #3498db;
 
 }
 
@@ -256,129 +266,164 @@ footer p {
 
 @media (max-width: 768px) {
 
-    header h1 {
+  header h1 {
 
-        font-size: 2rem;
+    font-size: 2rem;
 
-    }
+  }
 
 
 
-    .container {
-        width: 95%;
-    }
+  .container {
+    width: 95%;
+  }
 
-    header .profile img {
-        width: 120px;
-        height: 120px;
-    }
+  header .profile img {
+    width: 120px;
+    height: 120px;
+  }
 
 }
+
 /* Efeito de fade-in (aumento de opacidade) */
 .fade-in-text {
   font-size: 24px;
   opacity: 0;
   animation: fadeIn 3s ease-in-out forwards;
 }
+
 /* Animação da máquina de escrever */
 /* Animação de máquina de escrever */
 .typing-text {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 24px;
-    white-space: nowrap; /* Garante que o texto não quebre automaticamente */
-    display: flex;
-    flex-direction: column;
-    gap: 5px; /* Espaçamento entre as linhas */
-  }
-  
-  .typing-line {
-    overflow: hidden; /* Impede que o texto ultrapasse a largura */
-    white-space: nowrap; /* Garante que o texto de cada linha não quebre */
-    width: 0; /* Começa invisível */
-    border-right: 4px solid transparent; /* Simula o cursor de digitação */
-    animation: typing 5s steps(50) 1s forwards, blinkCaret 0.75s step-end infinite;
-  }
-  
-  /* Animação de digitação */
-  @keyframes typing {
-    to {
-      width: 100%; /* Aumenta a largura até que o texto completo apareça */
-    }
-  }
-  
-  /* Animação do cursor piscando */
-  @keyframes blinkCaret {
-    50% {
-      border-color: transparent; /* Faz o cursor piscar */
-    }
-  }
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  white-space: nowrap;
+  /* Garante que o texto não quebre automaticamente */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  /* Espaçamento entre as linhas */
+}
 
-  /* Delay para cada linha */
+.typing-line {
+  overflow: hidden;
+  /* Impede que o texto ultrapasse a largura */
+  white-space: nowrap;
+  /* Garante que o texto de cada linha não quebre */
+  width: 0;
+  /* Começa invisível */
+  border-right: 4px solid #6a1b9a;
+  /* Simula o cursor de digitação */
+  animation: typing 5s steps(30) 1s forwards, blinkCaret 0.75s step-end infinite, colorChange 5s linear 1s forwards;
+}
+
+/* Animação de digitação */
+@keyframes typing {
+  to {
+    width: 100%;
+    /* Aumenta a largura até que o texto completo apareça */
+  }
+}
+
+/* Animação para a mudança de cor do texto */
+@keyframes colorChange {
+  0% {
+    border-right: 4px solid #6a1b9a;
+  }
+  50% {
+    border-right: 4px solid #6a1b9a;
+  }
+  100% {
+    border-right: 4px solid transparent;
+  }
+}
+
+
+/* Animação do cursor piscando */
+@keyframes blinkCaret {
+  50% {
+    border-color: transparent;
+    /* Faz o cursor piscar */
+  }
+}
+
+/* Delay para cada linha */
 .delay-1 {
-    animation-delay: 0s; /* Primeira linha começa imediatamente */
-  }
-  
-  .delay-2 {
-    animation-delay: 5s; /* Segunda linha começa depois de 5s (tempo da primeira linha) */
-  }
-  
-  .delay-3 {
-    animation-delay: 10s; /* Terceira linha começa depois de 10s (tempo da primeira + segunda linha) */
-  }
+  animation-delay: 0s;
+  /* Primeira linha começa imediatamente */
+}
 
-  /* Estilo para a lista */
+.delay-2 {
+  animation-delay: 5s;
+  /* Segunda linha começa depois de 5s (tempo da primeira linha) */
+}
+
+.delay-3 {
+  animation-delay: 10s;
+  /* Terceira linha começa depois de 10s (tempo da primeira + segunda linha) */
+}
+
+/* Estilo para a lista */
 .technology-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    margin-left: 7%;
-    margin-right: 7%;
-  }
-  
-  .card {
-    background-color: black; /* Cor de fundo do card */
-    opacity: 30%;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 10%; /* Dois itens por linha */
-    text-align: center;
-    font-size: 18px;
-    transform: translateX(-300%); /* Inicialmente fora da tela */
-    animation: slideIn 1.8s ease-out forwards; /* Animação de deslizamento */
-    border-bottom: 1px solid;
-    border-color: #7B35C5;
-  }
-  
-  .card:hover{
-    border-right: 1px solid;
-    border-left: 1px solid;
-    border-top: 1px solid;
-    border-radius: 8px;
-    border-color: #7B35C5;
-  }
-  
-  /* Animação de deslizamento */
-@keyframes slideIn {
-    to {
-      opacity: 1; /* Fica visível */
-      transform: translateX(0); /* Vai para a posição original */
-    }
-  }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
-    .card {
-      width: 100%; /* Em telas menores, cada item ocupa a linha inteira */
-      animation-delay: 0.2s;
-    }
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin-left: 7%;
+  margin-right: 7%;
+}
 
-  .color-primary{
-    color: #7B35C5;
-    opacity: 70%;
+.card {
+  background-color: black;
+  /* Cor de fundo do card */
+  opacity: 30%;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 10%;
+  /* Dois itens por linha */
+  text-align: center;
+  font-size: 18px;
+  transform: translateX(-300%);
+  /* Inicialmente fora da tela */
+  animation: slideIn 1.8s ease-out forwards;
+  /* Animação de deslizamento */
+  border-bottom: 1px solid;
+  border-color: #7B35C5;
+  animation-delay: 15.2s;
+}
+
+.card:hover {
+  border-right: 1px solid;
+  border-left: 1px solid;
+  border-top: 1px solid;
+  border-radius: 8px;
+  border-color: #7B35C5;
+}
+
+/* Animação de deslizamento */
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    /* Fica visível */
+    transform: translateX(0);
+    /* Vai para a posição original */
   }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    /* Em telas menores, cada item ocupa a linha inteira */
+    animation-delay: 0.2s;
+  }
+}
+
+.color-primary {
+  color: #7B35C5;
+  opacity: 70%;
+}
