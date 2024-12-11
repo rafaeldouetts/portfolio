@@ -1,0 +1,406 @@
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+
+/* Corpo e fundo */
+
+body {
+
+    font-family: 'Arial', sans-serif;
+
+    line-height: 1.6;
+
+    background: #111111;
+
+    color: #fff;
+
+}
+
+
+
+/* Container principal */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+/* Cabeçalho */
+
+header {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    position: fixed;
+    width: 100%;
+    border: solid;
+    border-bottom-color: #7B35C5;
+}
+
+
+
+header .profile img {
+
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 4px solid #fff;
+}
+
+
+
+header h1 {
+
+    font-size: 2.5rem;
+
+    margin-bottom: 0.5rem;
+
+}
+
+
+
+header p {
+
+    font-size: 1.1rem;
+
+    font-weight: 300;
+
+}
+
+
+
+/* Sobre Mim */
+
+.about {
+
+    padding: 3rem 0;
+
+    text-align: center;
+
+}
+
+
+
+.about h2 {
+
+    font-size: 2rem;
+
+    margin-bottom: 1rem;
+
+}
+
+
+
+/* Habilidades Técnicas */
+
+.skills {
+
+    padding: 3rem 0;
+
+    background: rgba(0, 0, 0, 0.1);
+
+    border-radius: 8px;
+
+    margin-bottom: 3rem;
+
+    text-align: center;
+
+}
+
+
+
+.skills h2 {
+
+    font-size: 2rem;
+
+    margin-bottom: 1.5rem;
+
+}
+
+
+
+.skills ul {
+
+    list-style-type: none;
+
+}
+
+
+
+.skills li {
+
+    font-size: 1.2rem;
+
+    margin: 0.5rem 0;
+
+    padding: 0.3rem;
+
+    border-bottom: 1px solid #eee;
+
+}
+
+
+
+/* Projetos */
+
+.projects {
+
+    padding: 3rem 0;
+
+    background: rgba(0, 0, 0, 0.1);
+
+    border-radius: 8px;
+
+}
+
+
+
+.projects h2 {
+
+    font-size: 2rem;
+
+    text-align: center;
+
+    margin-bottom: 2rem;
+
+}
+
+
+
+.project {
+
+    margin-bottom: 2rem;
+
+}
+
+
+
+.project h3 {
+
+    font-size: 1.6rem;
+
+    margin-bottom: 0.5rem;
+
+}
+
+
+
+.project p {
+
+    font-size: 1.1rem;
+
+}
+
+
+
+/* Footer */
+
+footer {
+
+    padding: 2rem 0;
+
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.4);
+
+    border-radius: 10px;
+
+    margin-top: 3rem;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+
+}
+
+
+
+footer p {
+
+    font-size: 1rem;
+
+    font-weight: 300;
+
+}
+
+
+
+/* Efeitos de transição */
+
+.project h3 {
+
+    transition: color 0.3s ease;
+
+}
+
+
+
+.project h3:hover {
+
+    color: #3498db;
+
+}
+
+
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+
+    header h1 {
+
+        font-size: 2rem;
+
+    }
+
+
+
+    .container {
+        width: 95%;
+    }
+
+    header .profile img {
+        width: 120px;
+        height: 120px;
+    }
+
+}
+/* Efeito de fade-in (aumento de opacidade) */
+.fade-in-text {
+  font-size: 24px;
+  opacity: 0;
+  animation: fadeIn 3s ease-in-out forwards;
+}
+/* Animação da máquina de escrever */
+/* Animação de máquina de escrever */
+.typing-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    white-space: nowrap; /* Garante que o texto não quebre automaticamente */
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Espaçamento entre as linhas */
+  }
+  
+  .typing-line {
+    overflow: hidden; /* Impede que o texto ultrapasse a largura */
+    white-space: nowrap; /* Garante que o texto de cada linha não quebre */
+    width: 0; /* Começa invisível */
+    border-right: 4px solid transparent; /* Simula o cursor de digitação */
+    animation: typing 5s steps(50) 1s forwards, blinkCaret 0.75s step-end infinite;
+  }
+  
+  /* Animação de digitação */
+  @keyframes typing {
+    to {
+      width: 100%; /* Aumenta a largura até que o texto completo apareça */
+    }
+  }
+  
+  /* Animação do cursor piscando */
+  @keyframes blinkCaret {
+    50% {
+      border-color: transparent; /* Faz o cursor piscar */
+    }
+  }
+
+  /* Delay para cada linha */
+.delay-1 {
+    animation-delay: 0s; /* Primeira linha começa imediatamente */
+  }
+  
+  .delay-2 {
+    animation-delay: 5s; /* Segunda linha começa depois de 5s (tempo da primeira linha) */
+  }
+  
+  .delay-3 {
+    animation-delay: 10s; /* Terceira linha começa depois de 10s (tempo da primeira + segunda linha) */
+  }
+
+  /* Estilo para a lista */
+.technology-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  .card {
+    background-color: black; /* Cor de fundo do card */
+    opacity: 30%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 45%; /* Dois itens por linha */
+    text-align: center;
+    font-size: 18px;
+    transform: translateX(-300%); /* Inicialmente fora da tela */
+    animation: slideIn 1.8s ease-out forwards; /* Animação de deslizamento */
+  }
+  
+  
+  /* Animação de deslizamento */
+@keyframes slideIn {
+    to {
+      opacity: 1; /* Fica visível */
+      transform: translateX(0); /* Vai para a posição original */
+    }
+  }
+  
+  /* Delay para cada item */
+  .card:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  
+  .card:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  
+  .card:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  .card:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+  
+  .card:nth-child(5) {
+    animation-delay: 1s;
+  }
+  
+  .card:nth-child(6) {
+    animation-delay: 1.2s;
+  }
+  
+  .card:nth-child(7) {
+    animation-delay: 1.4s;
+  }
+  
+  .card:nth-child(8) {
+    animation-delay: 1.6s;
+  }
+  
+  .card:nth-child(9) {
+    animation-delay: 1.8s;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .card {
+      width: 100%; /* Em telas menores, cada item ocupa a linha inteira */
+      animation-delay: 0.2s;
+    }
+  }
