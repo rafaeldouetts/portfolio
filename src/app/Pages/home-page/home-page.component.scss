@@ -349,7 +349,7 @@ footer p {
     font-size: 18px;
     transform: translateX(-300%); /* Inicialmente fora da tela */
     animation: slideIn 1.8s ease-out forwards; /* Animação de deslizamento */
-    border: solid;
+    border-bottom: solid;
     border-color: #7b35c5;
   }
   
