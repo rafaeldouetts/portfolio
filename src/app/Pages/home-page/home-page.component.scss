@@ -25,8 +25,6 @@ body {
 
 }
 
-
-
 /* Container principal */
 
 .container {
@@ -44,7 +42,8 @@ header {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
     position: fixed;
-    width: 100%;
+    width: 86%;
+    margin-left: 7%;
     border: solid;
     border-bottom-color: #7B35C5;
 }
@@ -351,10 +350,17 @@ footer p {
     font-size: 18px;
     transform: translateX(-300%); /* Inicialmente fora da tela */
     animation: slideIn 1.8s ease-out forwards; /* Animação de deslizamento */
-    border-bottom: solid;
+    border-bottom: 1px solid;
     border-color: #7B35C5;
   }
   
+  .card:hover{
+    border-right: 1px solid;
+    border-left: 1px solid;
+    border-top: 1px solid;
+    border-radius: 8px;
+    border-color: #7B35C5;
+  }
   
   /* Animação de deslizamento */
 @keyframes slideIn {
@@ -370,4 +376,9 @@ footer p {
       width: 100%; /* Em telas menores, cada item ocupa a linha inteira */
       animation-delay: 0.2s;
     }
+  }
+
+  .color-primary{
+    color: #7B35C5;
+    opacity: 70%;
   }
