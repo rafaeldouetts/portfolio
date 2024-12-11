@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+html{
+    background-color: #111111;
+    scrollbar-width: auto; /* Barra de rolagem fina */
+    scrollbar-color: #9c27b0 #111111; /* Cor do "polegar" e da trilha */
+}
+
+/* Para navegadores Webkit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #9c27b0; /* Cor do "polegar" (parte que o usuário arrasta) */
+    border-radius: 50px; /* Bordas arredondadas no "polegar" */
+    
+    
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px; /* Bordas arredondadas na trilha */
+}
+
