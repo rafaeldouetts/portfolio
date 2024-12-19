@@ -56,6 +56,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'devdouetts'
-          slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_766B8F7A547C4CA89EF25FA40A0F4039 }}
           package: .
