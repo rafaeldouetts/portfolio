@@ -19,12 +19,13 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v3
         with:
-          node-version: '20.10.0'
+          node-version: '20.x'
 
       - name: npm install, build, and test
         run: |
           npm install
           npm run build --if-present
+          npm run test --if-present
 
       - name: Zip artifact for deployment
         run: zip release.zip ./* -r
@@ -56,5 +57,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'devdouetts'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_766B8F7A547C4CA89EF25FA40A0F4039 }}
+          slot-name: 'Production'
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4B8FAD413FFF453C84B9E1FB2C1D1EF0 }}
           package: .
