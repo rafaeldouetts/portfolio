@@ -25,3 +25,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Config - Deploy
+em nosso aplicativo web app da azure, precisamos ir na opcao configuracoes -> Startup Command e digitar o seguinte comando: pm2 serve /home/site/wwwroot/dist/portfolio/browser --no-daemon 
+para corrigir o erro de inicializacao da aplicacao, caso contrario vai dar erro de container 
+![alt text](image.png)
