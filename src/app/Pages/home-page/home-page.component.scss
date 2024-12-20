@@ -378,7 +378,7 @@ footer p {
 .card {
   background-color: black;
   /* Cor de fundo do card */
-  opacity: 30%;
+  // opacity: 30%;
   padding: 20px;
   margin: 10px;
   border-radius: 8px;
@@ -387,13 +387,13 @@ footer p {
   /* Dois itens por linha */
   text-align: center;
   font-size: 18px;
-  transform: translateX(-300%);
+  // transform: translateX(-300%);
   /* Inicialmente fora da tela */
-  animation: slideIn 1.8s ease-out forwards;
+  // animation: slideIn 1.8s ease-out forwards;
   /* Animação de deslizamento */
   border-bottom: 1px solid;
   border-color: #7B35C5;
-  animation-delay: 15.2s;
+  // animation-delay: 15.2s;
 }
 
 .card:hover {
