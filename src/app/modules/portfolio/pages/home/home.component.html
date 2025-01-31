@@ -1,0 +1,20 @@
+<app-header style="display: inline-grid;"></app-header>
+
+<main>
+    <app-knowledge></app-knowledge>
+</main>
+
+<app-experiences>
+
+</app-experiences>
+
+@defer(on viewport)
+{
+    <app-projects></app-projects>    
+} @placeholder {
+    <section>
+        <h2>Carregando todos os projetos desenvolvidos.....</h2>
+    </section>
+}@error {
+<h2>ocorreu um erro no download do component</h2>
+}

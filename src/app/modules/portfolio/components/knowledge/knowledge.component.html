@@ -1,0 +1,11 @@
+<div class="container">
+
+    <ul style="display: flex; align-items: center; justify-content: center; gap: 50px;">
+        @for(item of arrayKnowLedge(); track item)
+        {
+            <li>
+                <img [src]="item.src" [alt]="item.alt" loading="lazy" width="22px" height="100px">
+            </li>
+        }
+    </ul>
+</div>

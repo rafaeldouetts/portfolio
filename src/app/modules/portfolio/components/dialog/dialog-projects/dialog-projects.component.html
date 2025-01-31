@@ -1,0 +1,16 @@
+<header>
+    <h2>{{getData()?.title}}</h2>
+    <button (click)="closeModel()">
+        <img src="assets/icons/dialog/close.svg" alt="Botão para fechar o dialog">
+    </button>
+</header>
+
+<mat-dialog-content>
+    <h3>Descricao</h3>
+
+    <article [innerHTML]="getData()?.description"></article>
+
+    <nav>
+        <a target="_blank" class="btn btn-primary">Confirmar</a>
+    </nav>
+</mat-dialog-content>
